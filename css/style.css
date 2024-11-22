@@ -823,7 +823,7 @@ a:focus {
     z-index: 1;
     opacity: 0;
     transition: .5s;
-    background: rgba(255, 111, 97, .7);
+    background: #e9c46a ;
 }
 
 .pub-slider .slick-prev {
@@ -920,7 +920,7 @@ a:focus {
 }
 
 .contact .contact-info p a:hover {
-    color: #2a9d8f;
+    color: #e9c46a;
     text-decoration: none;
 }
 
@@ -966,14 +966,14 @@ a:focus {
 
 .skills .form .btn {
     color: #ffffff;
-    background: #2a9d8f;
+    background: #e9c46a;
     border-radius: 0;
     transition: all .3s;
     font-size: 16px;
     font-weight: bold;
 }
 .skill .form .btn:hover {
-    color: #2a9d8f;
+    color: #e9c46a;
     background: #ffffff;
     font-size: 16px;
     font-weight: bold;
@@ -981,7 +981,7 @@ a:focus {
 
 .contact .form .btn {
     color: #ffffff;
-    background: #2a9d8f;
+    background: #e9c46a;
     border-radius: 0;
     transition: all .3s;
     font-size: 16px;
@@ -999,7 +999,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    background-color: #2a9d8f;
+    background-color: #e9c46a;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -1020,24 +1020,20 @@ a:focus {
     transform: translateY(-2px);
 }
 
-.btn-download:hover i {
-    transform: translateX(5px);
-}
-
 .btn-download:focus {
     outline: none;
-    background-color: #2a9d8f; 
+    background-color: #e9c46a; 
 }
 
 .programming-icons img {
-    width: 50px; /* Dimensione personalizzata */
-    border-radius: 20px; /* Angoli arrotondati */
-    padding: 5px; /* Spaziatura interna */
-    background-color: #ffffff; /* Sfondo */
+    width: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #ffffff;
 }
 .programming-icons img:hover {
-    transform: scale(1.3); /* Effetto zoom al passaggio del mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra */
+    transform: scale(1.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
