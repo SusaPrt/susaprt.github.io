@@ -1,319 +1,677 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Susanna Peretti</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Susanna Peretti" name="keywords">
-        <meta content="Susanna Peretti's personal website" name="description">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/slick/slick.css" rel="stylesheet">
-        <link href="lib/slick/slick-theme.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="sidebar-header">
-                    <img src="img/pic.JPG" alt="Image">
-                </div>
-                <div class="sidebar-content">
-                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand"> </a>
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="nav navbar-nav">
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" href="#header">Home<i class="fa fa-home"></i></a>
-                                </li>!-->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#education">Education<i class="fa fa-graduation-cap"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#experience">Experience<i class="fa fa-briefcase"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#skills">Skills<i class="fa fa-cogs"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pub">Publications<i class="fa fa-book"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contacts<i class="fa fa-envelope"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="sidebar-footer">
-                    <a href="https://github.com/SusaPrt"><i class="fab fa-github"></i></a>
-                    <a href="https://it.linkedin.com/in/susanna-peretti-466747278"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://scholar.google.com/citations?user=ngen5pgAAAAJ&hl=it"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://www.researchgate.net/profile/Susanna-Peretti"><i class="fab fa-researchgate"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <!-- Header Start -->
-                <div class="header" id="header">
-                    <div class="content-inner">
-                        <p>Hi! I’m Susanna, an MSc in Computer Science and Artificial Intelligence.</p>
-                        <h2></h2>
-                        <div class="typed-text">Big Data, Machine Learning, Deep Learning, Human Activity Recognition, IoT Development, Machine Unlearning, Edge AI, Energy-efficient ML, Machine Unlearning</div>
-                    </div>
-                </div>
-                <!-- Header End -->
-
-                <!-- About Start -->
-                <div class="about" id="about">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>About Me</h2>
-                        </div>
-                        <div class="row align-items-center">
-                                <p>
-                                    M.Sc. in Computer Science with research experience in energy-efficient Machine Learning and Human Activity Recognition.
-                                </p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <!-- About End -->
-                
-                <!-- Education Start -->
-                <div class="education" id="education">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Education</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="edu-col"> 
-                                    <span>02-Oct-2023 <i>to</i> 19-Feb-2026</span>
-                                    <h3>Master Degree</h3>
-                                    <h5>University of Urbino 'Carlo Bo'</h5>
-                                    <p>Curriculum: Artificial Intelligence</p>
-                                    <p>Thesis: Machine Unlearning applied to Time Series and HAR</p>
-                                    <p>Grade: 110/110 cum Laude</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>28-Sep-2020 <i>to</i> 21-Sep-2023</span>
-                                    <h3>Bachelor Degree</h3>
-                                    <h5>University of Urbino 'Carlo Bo'</h5>
-                                    <p>Curriculum: Signal Processing</p>
-                                    <p>Thesis: Impact of feature selection on pattern identification in handwashing</p>
-                                    <p>Grade: 108/110</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="edu-col">
-                                    <span>10-Sep-2013 <i>to</i> 20-Jul-2018</span>
-                                    <h3>Scientific Maturity</h3>
-                                    <h5>High School L. da Penne - M. dei Fiori</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Education End -->
-                
-                <!-- Experience Start -->
-                <div class="experience" id="experience">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Experience</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>18-May-2026 <i>to</i> Present</span>
-                                    <h3>IT Consultant</h3>
-                                    <h4>Akinda Italia S.r.l.</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>02-Feb-2026 <i>to</i> 15-May-2026</span>
-                                    <h3>Sanichain</h3>
-                                    <h4>University of Urbino 'Carlo Bo'</h4>
-                                    <h5>Fixed-term Research Contract</h5>
-                                    <p>The project aims to design and develop blockchain-based solutions within the digitalization of hospital and clinical disinfection and sanitization processes. </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>15-Jan-2024 <i>to</i> 15-Dec-2025</span>
-                                    <h3>IoT and ML solutions for engagement and recognition of semantic activities on an urban scale</h3>
-                                    <h4>University of Urbino 'Carlo Bo'</h4>
-                                    <h5>Research scholarship</h5>
-                                    <p>The project aims to develop IoT solutions using shallow and deep learning for semantic activity recognition. It focuses on
-                                        analyzing signals from wearable devices, selecting relevant features, and assessing computational efficiency.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="exp-col">
-                                    <span>01-Feb-2023 <i>to</i> 31-Jul-2023</span>
-                                    <h3>Alternative signal processing tools to machine learning</h3>
-                                    <h4>University of Urbino 'Carlo Bo'</h4>
-                                    <h5>Internship</h5>
-                                    <p>The internship involves the analysis and utilization of various methods of digital signal processing (DSP) for human activity
-                                        recognition using machine learning algorithms. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Experience End -->
-
-                <!-- Skills Start -->
-                <div class="skills" id="skills">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Skills</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <h5>Programming languages:</h5>
-                                    <div class="programming-icons">
-                                        <img src="img/python.png" alt="Python" title="Python" />
-                                        <img src="img/c++.png" alt="C++" title="C++" />
-                                        <img src="img/java.png" alt="Java" title="Java" />
-                                        <img src="img/javascript.png" alt="JavaScript" title="JavaScript" />
-                                    </div>
-                                    <p> </p>
-                                    <h5>Markup languages:</h5>
-                                    <div class="programming-icons">
-                                        <img src="img/html.png" alt="HTML" title="HTML" />
-                                        <img src="img/css.png" alt="CSS" title="CSS" />
-                                        <img src="img/latex.png" alt="LaTeX" title="LaTeX" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skill-col">
-                                    <h5>IDE:</h5>
-                                    <div class="programming-icons">
-                                        <img src="img/visual-studio.png" alt="Visual Studio" title="Visual Studio" />
-                                        <img src="img/android-studio.png" alt="Android Studio" title="Android Studio" />
-                                        <img src="img/netbeans.png" alt="NetBeans" title="NetBeans" />
-                                        <img src="img/eclipse.png" alt="Eclipse" title="Eclipse" />
-                                        <img src="img/intellij-idea.png" alt="IntelliJ IDEA" title="IntelliJ IDEA" />
-                                    </div>
-                                    <p> </p>
-                                    <h5>Graphic Editors:</h5>
-                                    <div class="programming-icons">
-                                        <img src="img/photoshop.png" alt="Photoshop" title="Photoshop" />
-                                        <img src="img/illustrator.png" alt="Illustrator" title="Illustrator" />
-                                        <img src="img/premiere.png" alt="Premiere" title="Premiere" />
-                                        <img src="img/Procreate.png" alt="Procreate" title="Procreate" />
-                                        <img src="img/gimp.png" alt="GIMP" title="GIMP" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills End -->
-
-                <!-- Publications Start -->
-                <div class="pub" id="pub">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Publications</h2>
-                        </div>
-                        <ul class="pub-list">
-                            <li>
-                                <p><strong>Complexity-aware Features Selection for Wrist-worn Human Activity Recognition</strong></p>
-                                <p>Authors: Susanna Peretti, Chiara Contoli, Emanuele Lattanzi</p>
-                                <p>Presented at the 3rd Workshop on Pervasive and Resource-Constrained Artificial Intelligence (PerConAI)</p>
-                                <p>Biarrizt (FR), 10-Feb-2024</p>
-                                <p>DOI: <a href="https://ieeexplore.ieee.org/abstract/document/10502733">10.1109/percomworkshops59983.2024.10502733</a></p>
-                            </li>
-                            <li>
-                                <p><strong>Semantic Template Recognition of Human Activities in Wearable Sensor Data Using Siamese Network</strong></p>
-                                <p>Authors: Emanuele Lattanzi, Chiara Contoli, Lorenzo Calisti, Giacomo Di Fabrizio, Nicholas Kania, Susanna Peretti</p>
-                                <p>DOI: <a href="https://ieeexplore.ieee.org/document/10966850">10.1109/access.2025.3561697</a></p>
-                            </li>
-                            <li>
-                                <p><strong>An Experimental Study on the Energy Efficiency of Features Selection for Human Activity Recognition with wrist-worn Devices</strong></p>
-                                <p>Authors: Susanna Peretti, Chiara Contoli, Emanuele Lattanzi</p>
-                                <p>Presented at the 9th International Workshop on Sensor-Based Activity Recognition and Artificial Intelligence (iWoar 2024)</p>
-                                <p>Potsdam (GE), 26-Sep-2024</p>
-                                <p>DOI: <a href="https://link.springer.com/chapter/10.1007/978-3-031-80856-2_3">10.1007/978-3-031-80856-2_3</a></p>
-                            </li>
-                            <li>
-                                <p><strong>Balancing Accuracy and Energy: the Impact of Window Size on Sensor-based Human Activity Recognition</strong></p>
-                                <p>Authors: Chiara Contoli, Susanna Peretti, Emanuele Lattanzi</p>
-                                <p>Accepted at the 21st International Conference on Artificial Intelligence Applications and Innovations (IFIP AIAI 2025)</p>
-                                <p>Cyprus (CY), 25-Jun-2025</p>
-                                <p>DOI: <a href="https://link.springer.com/chapter/10.1007/978-3-031-96235-6_4">10.1007/978-3-031-96235-6_4</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Publications End -->
-                
-                <!-- Contact Start -->
-                <div class="contact" id="contact">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Contacts</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="contact-info">
-                                    <p><i class="fa fa-user"></i>Susanna Peretti</p>
-                                    <!--<p><i class="fa fa-envelope"></i><a href="mailto:s.peretti@campus.uniurb.it">s.peretti@campus.uniurb.it</a></p>-->
-                                    <p><i class="fa fa-envelope"></i><a href="mailto:susa.peretti@gmail.com">susa.peretti@gmail.com</a></p>
-                                    <p><i class="fa fa-map-marker"></i>Lecco, Italia</p>
-                                </div>
-                            </div>
-                            <!--
-                            <div class="col-md-6 text-md-right">
-                                <a href="files/CV_eng.pdf" download class="btn-download mt-3">
-                                    <img src="img/flag-uk.png" alt="UK Flag" style="width: 25px; height: 20px; margin-right: 12px; margin-right: 12px"> CV
-                                </a>
-                                <br>
-                                <a href="files/CV_ita.pdf" download class="btn-download mt-3">
-                                    <img src="img/flag-ita.png" alt="ITA Flag" style="width: 25px; height: 20px; margin-right: 12px; margin-right: 12px"> CV
-                                </a>
-                            </div>
-                            -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact End -->
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Susanna Peretti</title>
+    <meta
+      name="description"
+      content="Susanna Peretti, MSc in Computer Science and AI. Research experience in energy-efficient machine learning and human activity recognition."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta
+      property="og:title"
+      content="Susanna Peretti"
+    />
+    <meta
+      property="og:description"
+      content="Computer Science &amp; AI. Research in energy-efficient machine learning and human activity recognition."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="#header" aria-label="Susanna Peretti, home"
+          >sp<span>.</span></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a><a href="#experience">Experience</a
+          ><a href="#pub">Publications</a><a href="#education">Education</a
+          ><a href="#projects">Projects</a><a href="#skills">Skills</a
+          ><a class="nav-contact" href="#contact"
+            >Get in touch <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="header" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="small-dot" aria-hidden="true"></span>
+            COMPUTER SCIENCE &amp; ARTIFICIAL INTELLIGENCE
+          </p>
+          <h1 id="hero-title">Susanna<br />Peretti<span></span></h1>
+          <p class="hero-description">
+            M.Sc. in Computer Science and Artificial Intelligence, with
+            experience in wearable sensing, human activity recognition and
+            machine unlearning.
+          </p>
         </div>
-        
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img
+              src="img/pic2.jpeg"
+              alt="Susanna Peretti"
+              width="831"
+              height="946"
+              fetchpriority="high"
+            />
+          </div>
+          <figcaption>
+            <span>Based in Lecco, Italy</span
+            ><span class="portrait-index" aria-hidden="true"
+              >45°51′ N · 9°24′ E</span
+            >
+          </figcaption>
+        </figure>
+        <div class="hero-bottom">
+          <span>Technology, research &amp; a curious mind.</span
+          ><a href="#about">Discover more <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+      <section
+        class="section container about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="section-label">
+          <span>01 / INTRODUCTION</span>
+          <h2 id="about-title">About me</h2>
+          <figure class="about-photo">
+            <img
+              src="img/pic.JPG"
+              alt="Susanna celebrating her graduation, holding her thesis and a bouquet"
+              width="4160"
+              height="6240"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              M.Sc. graduation · University of Urbino, 2026
+            </figcaption>
+          </figure>
+        </div>
+        <div class="section-body">
+          <p class="intro-text">
+            Hi, I’m Susanna. My work brings together
+            <em>machine learning, sensor data and software development.</em>
+          </p>
+          <p>
+            I studied Computer Science at the University of Urbino ‘Carlo Bo’,
+            where I completed my master’s degree with a curriculum in Artificial
+            Intelligence. During my studies and research, I explored how data
+            from wearable sensors can help recognise human activities, with
+            particular attention to the energy and computation these systems
+            require.
+          </p>
+          <p>
+            That work took me from signal processing and feature selection to
+            building IoT prototypes and evaluating machine learning models. For
+            my master’s thesis, I focused on machine unlearning applied to time
+            series and human activity recognition, exploring how models can
+            forget information they have learned.
+          </p>
+          <p>
+            Alongside research, I develop software projects that let me explore
+            different ideas in practice: from conversational agents and
+            numerical simulations to mobile apps and web APIs.
+          </p>
+          <div class="topic-list" aria-label="Areas of interest">
+            <span>Energy-efficient ML</span
+            ><span>Human Activity Recognition</span
+            ><span>Machine Unlearning</span><span>Edge AI</span
+            ><span>IoT Development</span><span>Big Data</span
+            ><span>Deep Learning</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section container"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-label">
+          <span>02 / EXPERIENCE</span>
+          <h2 id="experience-title">Where I’ve<br />worked</h2>
+        </div>
+        <div class="section-body timeline">
+          <article class="timeline-entry">
+            <p class="entry-date">18-May-2026 — Present</p>
+            <div>
+              <h3>IT Consultant</h3>
+              <h4>Akinda Italia S.r.l.</h4>
+              <p>
+                I develop automation solutions for business processes and
+                operational workflows, alongside AI-powered systems that
+                automate customer interactions through Meta’s messaging
+                channels.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <p class="entry-date">02-Feb-2026 — 15-May-2026</p>
+            <div>
+              <h3>Sanichain</h3>
+              <h4>University of Urbino 'Carlo Bo'</h4>
+              <p class="entry-meta">Fixed-term Research Contract</p>
+              <p>
+                Designed a blockchain-based logging system for hospital and
+                clinical sanitization workflows, supporting the digitalization
+                and traceability of disinfection processes.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <p class="entry-date">15-Jan-2024 — 15-Dec-2025</p>
+            <div>
+              <h3>
+                IoT and ML solutions for engagement and recognition of semantic
+                activities on an urban scale
+              </h3>
+              <h4>University of Urbino 'Carlo Bo'</h4>
+              <p class="entry-meta">Research scholarship</p>
+              <p>
+                Developed IoT prototypes and machine learning models to
+                recognise activities from wearable sensor data. Analysed
+                signals, selected relevant features and evaluated models with a
+                focus on computational efficiency and energy consumption.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <p class="entry-date">01-Feb-2023 — 31-Jul-2023</p>
+            <div>
+              <h3>Alternative signal processing tools to machine learning</h3>
+              <h4>University of Urbino 'Carlo Bo'</h4>
+              <p class="entry-meta">Internship</p>
+              <p>
+                Investigated digital signal processing methods for extracting
+                features from wearable sensor data. Evaluated their
+                effectiveness in machine learning models for human activity
+                recognition.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="research-band">
+        <section class="section container" id="pub" aria-labelledby="pub-title">
+          <div class="section-label">
+            <span>03 / RESEARCH</span>
+            <h2 id="pub-title">Publications</h2>
+            <p>
+              Work on wearable sensors, activity recognition and efficient AI.
+            </p>
+            <a
+              class="text-link"
+              href="https://scholar.google.com/citations?user=ngen5pgAAAAJ&amp;hl=it"
+              >Google Scholar <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="section-body">
+            <ol class="pub-list">
+              <li>
+                <h3>
+                  Balancing Accuracy and Energy: the Impact of Window Size on
+                  Sensor-based Human Activity Recognition
+                </h3>
+                <p>
+                  Chiara Contoli,
+                  <span class="author-self">Susanna Peretti</span>, Emanuele
+                  Lattanzi
+                </p>
+                <p>
+                  Accepted at the 21st International Conference on Artificial
+                  Intelligence Applications and Innovations (IFIP AIAI 2025)
+                </p>
+                <p>
+                  Cyprus (CY), <time datetime="2025-06-25">25 June 2025</time>
+                </p>
+                <p class="paper-link">
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-96235-6_4"
+                    >Read publication <span aria-hidden="true">↗</span
+                    ><span class="doi"
+                      >DOI: 10.1007/978-3-031-96235-6_4</span
+                    ></a
+                  >
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Semantic Template Recognition of Human Activities in Wearable
+                  Sensor Data Using Siamese Network
+                </h3>
+                <p>
+                  Emanuele Lattanzi, Chiara Contoli, Lorenzo Calisti, Giacomo Di
+                  Fabrizio, Nicholas Kania,
+                  <span class="author-self">Susanna Peretti</span>
+                </p>
+                <p>Published in IEEE Access, Vol. 13, pp. 68245–68258</p>
+                <p><time datetime="2025-04-16">16 April 2025</time></p>
+                <p class="paper-link">
+                  <a href="https://ieeexplore.ieee.org/document/10966850"
+                    >Read publication <span aria-hidden="true">↗</span
+                    ><span class="doi"
+                      >DOI: 10.1109/access.2025.3561697</span
+                    ></a
+                  >
+                </p>
+              </li>
+              <li>
+                <h3>
+                  An Experimental Study on the Energy Efficiency of Features
+                  Selection for Human Activity Recognition with wrist-worn
+                  Devices
+                </h3>
+                <p>
+                  <span class="author-self">Susanna Peretti</span>, Chiara
+                  Contoli, Emanuele Lattanzi
+                </p>
+                <p>
+                  Presented at the 9th International Workshop on Sensor-Based
+                  Activity Recognition and Artificial Intelligence (iWoar 2024)
+                </p>
+                <p>
+                  Potsdam (DE),
+                  <time datetime="2024-09-26">26 September 2024</time>
+                </p>
+                <p class="paper-link">
+                  <a
+                    href="https://link.springer.com/chapter/10.1007/978-3-031-80856-2_3"
+                    >Read publication <span aria-hidden="true">↗</span
+                    ><span class="doi"
+                      >DOI: 10.1007/978-3-031-80856-2_3</span
+                    ></a
+                  >
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Complexity-aware Features Selection for Wrist-worn Human
+                  Activity Recognition
+                </h3>
+                <p>
+                  <span class="author-self">Susanna Peretti</span>, Chiara
+                  Contoli, Emanuele Lattanzi
+                </p>
+                <p>
+                  Presented at the 3rd Workshop on Pervasive and
+                  Resource-Constrained Artificial Intelligence (PerConAI)
+                </p>
+                <p>
+                  Biarritz (FR),
+                  <time datetime="2024-02-10">10 February 2024</time>
+                </p>
+                <p class="paper-link">
+                  <a
+                    href="https://ieeexplore.ieee.org/abstract/document/10502733"
+                    >Read publication <span aria-hidden="true">↗</span
+                    ><span class="doi"
+                      >DOI: 10.1109/percomworkshops59983.2024.10502733</span
+                    ></a
+                  >
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <section
+        class="section container"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <div class="section-label">
+          <span>04 / EDUCATION</span>
+          <h2 id="education-title">Academic<br />background</h2>
+        </div>
+        <div class="section-body timeline">
+          <article class="timeline-entry">
+            <p class="entry-date">02-Oct-2023 — 19-Feb-2026</p>
+            <div>
+              <h3>M.Sc. in Computer Science</h3>
+              <p class="entry-meta">University of Urbino 'Carlo Bo'</p>
+              <p>Curriculum: Artificial Intelligence</p>
+              <p>
+                Thesis: Machine Unlearning applied to Time Series and Human
+                Activity Recognition
+              </p>
+              <p>Grade: 110/110 cum Laude</p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <p class="entry-date">28-Sep-2020 — 21-Sep-2023</p>
+            <div>
+              <h3>B.Sc. in Computer Science</h3>
+              <p class="entry-meta">University of Urbino 'Carlo Bo'</p>
+              <p>Curriculum: Signal Processing</p>
+              <p>
+                Thesis: Impact of feature selection on pattern identification in
+                handwashing
+              </p>
+              <p>Grade: 108/110</p>
+            </div>
+          </article>
+          <article class="timeline-entry">
+            <p class="entry-date">10-Sep-2013 — 20-Jul-2018</p>
+            <div>
+              <h3>Scientific High School Diploma</h3>
+              <p class="entry-meta">High School L. da Penne - M. dei Fiori</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section container projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-label">
+          <span>05 / PROJECTS</span>
+          <h2 id="projects-title">Ideas into<br />practice</h2>
+          <p>
+            A selection of software projects, from AI experiments to everyday
+            applications.
+          </p>
+          <a class="text-link" href="https://github.com/SusaPrt"
+            >More on GitHub <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="section-body projects-body">
+          <div class="project-controls" hidden>
+            <button
+              type="button"
+              class="project-prev"
+              aria-label="Previous project"
+              aria-controls="project-track"
+            >
+              ←</button
+            ><button
+              type="button"
+              class="project-next"
+              aria-label="Next project"
+              aria-controls="project-track"
+            >
+              →
+            </button>
+          </div>
+          <div
+            class="projects-track"
+            id="project-track"
+            role="region"
+            aria-label="Projects, scroll horizontally"
+            tabindex="0"
+          >
+            <article class="project-card">
+              <p class="project-category">CONVERSATIONAL AI</p>
+              <h3>Hypertension chatbot</h3>
+              <p class="project-description">
+                An academic prototype built with Microsoft AutoGen, combining
+                planning, data tools and retrieval-augmented generation for
+                hypertension-related conversations. Compares round-robin and
+                dynamic agent orchestration.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>Python</li>
+                <li>AutoGen</li>
+                <li>RAG</li>
+                <li>ChromaDB</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/SusaPrt/Autogen-Chatbot-Ipertensione"
+                aria-label="View Hypertension chatbot on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <p class="project-category">IOT &amp; EDGE AI</p>
+              <h3>Smart Sensing with ESP32</h3>
+              <p class="project-description">
+                An environmental monitoring system built on four ESP32 nodes.
+                Uses lightweight TensorFlow Lite models to predict temperature
+                and humidity during sensor failures, with ESP-NOW communication
+                and data logging in InfluxDB Cloud.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>ESP32</li>
+                <li>TensorFlow Lite</li>
+                <li>ESP-NOW</li>
+                <li>InfluxDB</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/MarzioDellaBosca/Sensing_ESP32_Flow-Lite"
+                aria-label="View Smart Sensing with ESP32 on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <p class="project-category">NUMERICAL SIMULATION</p>
+              <h3>Sociology of Rats</h3>
+              <p class="project-description">
+                A grid-based simulation of interacting individuals, exploring
+                how population density affects the spread of nervous behaviour
+                and the emergence of collective phase transitions.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>Python</li>
+                <li>Jupyter</li>
+                <li>Simulation</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/SusaPrt/Sociology-of-Rats"
+                aria-label="View Sociology of Rats on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <p class="project-category">COMPUTER ARCHITECTURE</p>
+              <h3>Insertsort in Assembly</h3>
+              <p class="project-description">
+                An insertion sort implementation in Assembly, optimised with
+                WinMIPS64. Explores loop unrolling, register renaming and
+                instruction reordering to reduce pipeline stalls and improve
+                execution performance.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>Assembly</li>
+                <li>MIPS64</li>
+                <li>WinMIPS64</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/SusaPrt/Insertsort-Assembly"
+                aria-label="View Insertsort in Assembly on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <p class="project-category">MOBILE DEVELOPMENT</p>
+              <h3>Dishcovery</h3>
+              <p class="project-description">
+                A Flutter app that suggests recipes from the ingredients in a
+                personal pantry. Includes pantry management, recipe discovery
+                through the Spoonacular API and a shopping list, with local
+                persistence in Hive.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>Dart</li>
+                <li>Flutter</li>
+                <li>Hive</li>
+                <li>REST APIs</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/SusaPrt/Dishcovery"
+                aria-label="View Dishcovery on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="project-card">
+              <p class="project-category">WEB DEVELOPMENT</p>
+              <h3>Interest Seeker</h3>
+              <p class="project-description">
+                A web application and REST API for exploring and managing places
+                of interest around Bologna. Uses georeferenced open data, a map
+                interface and endpoints to add, update and remove locations.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>EJS</li>
+              </ul>
+              <a
+                class="project-repo"
+                href="https://github.com/SusaPrt/interestSeeker"
+                aria-label="View Interest Seeker on GitHub"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section container"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="section-label">
+          <span>06 / TOOLKIT</span>
+          <h2 id="skills-title">Skills &amp; tools</h2>
+        </div>
+        <div class="section-body skills-grid">
+          <div class="skill-group">
+            <h3>Machine learning &amp; experimentation</h3>
+            <ul>
+              <li>PyTorch</li>
+              <li>TensorFlow / TFLite</li>
+              <li>scikit-learn</li>
+              <li>Optuna</li>
+              <li>Weights &amp; Biases</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data analysis &amp; signal processing</h3>
+            <ul>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>SciPy</li>
+              <li>OpenCV</li>
+              <li>Seaborn</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>LLMs &amp; agents</h3>
+            <ul>
+              <li>AutoGen</li>
+              <li>Hugging Face</li>
+              <li>LangChain</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software &amp; app development</h3>
+            <ul>
+              <li>Python</li>
+              <li>C / C++</li>
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Dart / Flutter</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Databases &amp; data tools</h3>
+            <ul>
+              <li>SQL</li>
+              <li>InfluxDB</li>
+              <li>DBeaver</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Development workflow</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Visual Studio Code</li>
+              <li>IntelliJ IDEA</li>
+              <li>Android Studio</li>
+              <li>Visual Studio</li>
+              <li>NetBeans</li>
+              <li>Eclipse</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Research &amp; documentation</h3>
+            <ul>
+              <li>LaTeX</li>
+              <li>Overleaf</li>
+              <li>Zotero</li>
+              <li>Microsoft Office</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Design &amp; media</h3>
+            <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Premiere Pro</li>
+              <li>Procreate</li>
+              <li>GIMP</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <p class="eyebrow">07 / CONTACT</p>
+          <div class="contact-heading">
+            <h2 id="contact-title">Let’s get<br />in touch<span>.</span></h2>
+            <div>
+              <p>Susanna Peretti<br />Lecco, Italy</p>
+              <a class="email-link" href="mailto:susa.peretti@gmail.com"
+                >susa.peretti@gmail.com <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/SusaPrt">GitHub ↗</a
+            ><a href="https://it.linkedin.com/in/susanna-peretti-466747278"
+              >LinkedIn ↗</a
+            ><a
+              href="https://scholar.google.com/citations?user=ngen5pgAAAAJ&amp;hl=it"
+              >Google Scholar ↗</a
+            ><a href="https://www.researchgate.net/profile/Susanna-Peretti"
+              >ResearchGate ↗</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <span>© <span id="year">2026</span> Susanna Peretti</span
+      ><a href="#header">Back to top ↑</a>
+    </footer>
+  </body>
 </html>

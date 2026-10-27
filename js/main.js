@@ -1,78 +1,62 @@
-(function ($) {
-    "use strict";
-    
-    // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 30
-            }, 1500, 'easeInOutExpo');
-            
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
-            }
-        }
-    });
-    
+"use strict";
 
-    // Typed Initiate
-    if ($('.header h2').length == 1) {
-        var typed_strings = $('.header .typed-text').text();
-        var typed = new Typed('.header h2', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
-            loop: true
-        });
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+
+// Keep navigation useful with JavaScript disabled; enhance it with a location cue.
+if ("IntersectionObserver" in window) {
+  const links = [...document.querySelectorAll('nav a[href^="#"]')];
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        for (const link of links) {
+          if (link.hash === `#${entry.target.id}`)
+            link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        }
+      }
+    },
+    { rootMargin: "-15% 0px -65% 0px", threshold: 0 },
+  );
+  document
+    .querySelectorAll("main section[id]")
+    .forEach((section) => observer.observe(section));
+}
+
+const projectTrack = document.getElementById("project-track");
+if (projectTrack) {
+  const controls = document.querySelector(".project-controls");
+  const previous = controls.querySelector(".project-prev");
+  const next = controls.querySelector(".project-next");
+  controls.hidden = false;
+  const updateControls = () => {
+    previous.disabled = projectTrack.scrollLeft <= 2;
+    next.disabled =
+      projectTrack.scrollLeft >=
+      projectTrack.scrollWidth - projectTrack.clientWidth - 2;
+  };
+  const move = (direction) => {
+    const cards = projectTrack.querySelectorAll(".project-card");
+    const step = cards[1].offsetLeft - cards[0].offsetLeft;
+    const position = Math.round(projectTrack.scrollLeft / step) + direction;
+    projectTrack.scrollTo({
+      left: position * step,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+    });
+  };
+  previous.addEventListener("click", () => move(-1));
+  next.addEventListener("click", () => move(1));
+  projectTrack.addEventListener("scroll", updateControls, { passive: true });
+  window.addEventListener("resize", updateControls);
+  projectTrack.addEventListener("keydown", (event) => {
+    if (event.target !== projectTrack) return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      move(event.key === "ArrowRight" ? 1 : -1);
     }
-    
-    
-    // Skills
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
-    
-    
-    // Porfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
-    
-    $('.pub-slider').slick({
-        autoplay: true,
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-})(jQuery);
-
+  });
+  updateControls();
+}
